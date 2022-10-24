@@ -12,12 +12,31 @@ code {
     monospace;
 }
 
+.fade {
+  transition: all .5s;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
 .container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh;
 }
 
 .notes-list {
@@ -80,6 +99,7 @@ textarea:focus {
 
 .search input {
   border: none;
+  width: 100%;
   background-color: rgb(233, 233, 233);
 }
 
